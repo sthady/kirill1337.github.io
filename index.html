@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+    <a href="index.html"><img src="../assets/images/logo.webp" alt="Логотип"></a>
+    <div class="menu-icon" onclick="toggleMenu()">
+        &#9776; </div>
+    <div class="header-text" id="mobile-menu">
+        <div class="header-text1">
+            <a href="index.html">Главная</a>
+        </div>
+
+        <div class="header-text1">
+            <a href="index2.html">О нас</a>
+        </div>
+
+        <div class="header-text1">
+            <a href="index3.html">Поддержка</a>
+        </div>
+
+        <div class="header-text1">
+            <a href="index4.html">Расписание</a>
+        </div>
+    
+    </div>
+    <img src="../assets/images/theme.webp" alt="Смена темы">
+</header>
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    if (menu) {
+        menu.classList.toggle('active');
+    }
+}
+</script>
+     <div class="hero">
+    <div class="hero-cart">
+        <div class="hero-heading">
+            Стоматология без страха и боли
+        </div>
+
+        <div class="hero-text">
+            Современные технологии, бережная<br>
+            анестезия и внимательные<br>
+            врачи клиники «Одонтия».<br>
+            Ваш комфорт — наш главный приоритет<br>
+        </div>
+
+        <div class="hero-button">
+            <a href="index3.html"><button>Получить констультацию</button></a>
+        </div>
+        
+    </div>
+    <div class="doctor">
+        <img src="../assets/images/doctor.webp" alt="">
+    </div>
+</div>
+    <div class="description">
+    <div class="description-heading">
+        ОПИСАНИЕ
+    </div>
+
+    <div class="description-text">
+        Частная стоматологическая клиника «Одонтия» начала свою историю в Нижнем Новгороде в 2012 году. За более 
+        чем десятилетие успешной работы мы выросли из небольшого кабинета в современный медицинский центр, 
+        оснащенный по последнему слову техники. Наш путь — это постоянное развитие, обучение новым методикам и,
+        самое главное, тысячи здоровых и счастливых улыбок наших пациентов. Доверие, которое жители Нижнего 
+        Новгорода оказывают нам все эти годы, — наша главная ценность.
+    </div>
+</div>
+    <div class="advantages">
+    
+    <div class="advantages-heading">
+        НАШИ ПРЕИМУЩЕСТВА
+    </div>
+
+    <div class="advantages-carts">
+        <div class="advantages-cart1">
+            <div class="advantages-cart1-heading">
+                Технологии
+            </div>
+            <div class="advantages-card1-text">
+                Точно диагностируем и лечим с максимальным комфортом
+            </div>
+        </div>
+
+        <div class="advantages-cart1">
+            <div class="advantages-cart1-heading">
+                Опыт 12 лет
+            </div>
+            <div class="advantages-card1-text">
+                Работаем с 2012 года. Ваша улыбка в надежных руках.
+            </div>
+        </div>
+
+        <div class="advantages-cart1">
+            <div class="advantages-cart1-heading">
+                Гарантия на лечение
+            </div>
+            <div class="advantages-card1-text">
+                Даем официальную гарантию на все виды работ.
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="gallery">
+    <div class="gallery-heading">
+        ГАЛЕРЕЯ
+    </div>
+
+    <div class="gallery-carts"> 
+        <div class="gallery-cart1">
+            <div class="gallery-cart1-img">
+                <img src="../assets/images/client1.webp" alt="">
+            </div>
+            <div class="gallery-cart1-text">
+                Анна, пациент клиники
+            </div>
+        </div>
+    
+        <div class="gallery-cart1">
+            <div class="gallery-cart1-img">
+                <img src="../assets/images/client2.webp" alt="">
+            </div>
+            <div class="gallery-cart1-text">
+                Наталья, пациент клиники с 2018 года
+            </div>
+        </div> 
+        
+        <div class="gallery-cart1">
+            <div class="gallery-cart1-img">
+                <img src="../assets/images/client3.webp" alt="">
+            </div>
+            <div class="gallery-cart1-text">
+                Владимир, наш пациент более 5 лет
+            </div>
+        </div>
+    
+        <div class="gallery-cart1">
+            <div class="gallery-cart1-img">
+                <img src="../assets/images/client4.webp" alt="">
+            </div>
+            <div class="gallery-cart1-text">
+                Анна, пациент клиники
+            </div>
+        </div> 
+        
+        <div class="gallery-cart1 hidden-cart">
+            <div class="gallery-cart1-img">
+                <img src="../assets/images/stom1.webp" alt=""> 
+            </div>
+            <div class="gallery-cart1-text">
+                Стоматолог Евгений
+            </div>
+        </div>
+        
+        <div class="gallery-cart1 hidden-cart">
+            <div class="gallery-cart1-img">
+                <img src="../assets/images/stom2.webp" alt="">
+            </div>
+            <div class="gallery-cart1-text">
+                Стоматолог Виталий
+            </div>
+        </div> 
+    </div>
+
+    <button id="showMoreButton">Показать ещё...</button> 
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const showMoreButton = document.getElementById('showMoreButton');
+    const hiddenCarts = document.querySelectorAll('.hidden-cart');
+
+    if (showMoreButton && hiddenCarts.length > 0) {
+        
+        hiddenCarts.forEach(cart => {
+            cart.style.display = 'none';
+        });
+
+        showMoreButton.addEventListener('click', function() {
+            
+            hiddenCarts.forEach(cart => {
+                
+                cart.style.display = 'flex'; 
+            });
+
+            
+            showMoreButton.style.display = 'none';
+        });
+    }
+});
+</script>
+    <div class="review">
+    <div class="review-heading">ОТЗЫВЫ</div>
+    <div class="reviews-carts">
+        <div class="review-cart1">
+            <div class="client-img">
+                <img src="..//assets/images/client5.webp" alt="">
+            </div>
+            <div class="review-cart1-text">
+                <div class="stars">
+                    <div class="name">Алексей</div>
+                     <div class="review-image">
+                         <img src="../assets/images/stars.webp" alt="">
+                    </div>
+                </div>
+                <div class="review-text">
+                    Обращаюсь в «Одонтию» с момента открытия. Как публичный человек,<br>
+                    ценю безупречныйсервис и качество, которое держит марку. Рекомендую <br>
+                    как клинику, где работают настоящие мастера
+                </div>
+            </div>
+        </div>
+
+        <div class="review-cart1">
+            <div class="client-img">
+                <img src="..//assets/images/client6.webp" alt="">
+            </div>
+            <div class="review-cart1-text">
+                <div class="stars">
+                    <div class="name">Иван</div>
+                     <div class="review-image">
+                         <img src="../assets/images/stars.webp" alt="">
+                    </div>
+                </div>
+                <div class="review-text">
+                    Обращаюсь в «Одонтию» с момента открытия. Как публичный человек,<br>
+                    ценю безупречныйсервис и качество, которое держит марку. Рекомендую <br>
+                    как клинику, где работают настоящие мастера
+                </div>
+            </div>
+        </div>
+
+        <div class="review-cart1">
+            <div class="client-img">
+                <img src="..//assets/images/client7.webp" alt="">
+            </div>
+            <div class="review-cart1-text">
+                <div class="stars">
+                    <div class="name">Евгений</div>
+                     <div class="review-image">
+                         <img src="../assets/images/stars.webp" alt="">
+                    </div>
+                </div>
+                <div class="review-text">
+                    Обращаюсь в «Одонтию» с момента открытия. Как публичный человек,<br>
+                    ценю безупречныйсервис и качество, которое держит марку. Рекомендую <br>
+                    как клинику, где работают настоящие мастера
+                </div>
+            </div>
+        </div>
+
+        <button>Показать ещё...</button>
+    </div>
+</div>
+    <div class="support">
+    <div class="support-heading">Появились вопросы?</div>
+    <div class="support-text">Задайте на вопрос и мы мигом ответим!</div>
+    <a href="index3.html"><button>Получить констультацию</button></a>
+</div>
+    <footer>
+    <div class="navigation">
+        <div class="main-nav">Навигация</div>
+        <div class="nav1"><a href="index.html">Главная</a></div>
+        <div class="nav1"><a href="index2.html">О нас</a></div>
+        <div class="nav1"><a href="index3.html">Поддержка</a></div>
+        <div class="nav1"><a href="index4.html">Расписание</a></div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-heading">
+            Контакты
+        </div>
+        <div class="phone">
+            <img class="phone" src="../assets/images/phone (2).webp" alt="">
+            <div class="number">+7-904-063-26-07</div>
+        </div>
+        <div class="home">
+            <img class="home" src="../assets/images/home.webp" alt="">
+            <div class="adress">
+                г. Нижний Новгород,<br>
+                ул. Маркса, д. 44А</div>
+        </div>
+    </div>
+
+    <div class="social">
+        <div class="social-heading">Соцсети</div>
+        <img class="vk" src="../assets/images/vk.webp" alt="">
+        <img class="telega" src="../assets/images/telega.webp" alt="">
+        <img class="youtube" src="../assets/images/youtube.webp" alt="">
+    </div>
+</footer>
+
+</body>
+</html>

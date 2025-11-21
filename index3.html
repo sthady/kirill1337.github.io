@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+    <a href="index.html"><img src="../assets/images/logo.webp" alt="Логотип"></a>
+    <div class="menu-icon" onclick="toggleMenu()">
+        &#9776; </div>
+    <div class="header-text" id="mobile-menu">
+        <div class="header-text1">
+            <a href="index.html">Главная</a>
+        </div>
+
+        <div class="header-text1">
+            <a href="index2.html">О нас</a>
+        </div>
+
+        <div class="header-text1">
+            <a href="index3.html">Поддержка</a>
+        </div>
+
+        <div class="header-text1">
+            <a href="index4.html">Расписание</a>
+        </div>
+    
+    </div>
+    <img src="../assets/images/theme.webp" alt="Смена темы">
+</header>
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    if (menu) {
+        menu.classList.toggle('active');
+    }
+}
+</script>
+    <div class="feedback-container">
+    <form class="feedback-form">
+        <h2 class="form-title">Свяжитесь с нами</h2>
+        
+        <div class="form-group">
+            <label for="email">Ваш Email</label>
+            <input type="email" id="email" name="email" placeholder="Введите ваш email..." required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="5" placeholder="Введите сообщение.." required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-button">Отправить</button>
+    </form>
+</div>
+    <div class="contact">
+    <img class="map" src="../assets/images/map2.webp" alt="">
+    <div class="contact-main">
+        <div class="contact-heading">Наши контакты</div>
+        <div class="contact-cart">
+            <img src="../assets/images/home.webp" alt="">
+            <div class="contact-text">г. Нижний Новгород, ул. Маркса, д. 1337</div>
+        </div>
+        <div class="contact-cart">
+            <img src="../assets/images/phone (2).webp" alt="">
+            <div class="contact-text">+7-904-063-26-07</div>
+        </div>
+    </div>
+</div>
+    <footer>
+    <div class="navigation">
+        <div class="main-nav">Навигация</div>
+        <div class="nav1"><a href="index.html">Главная</a></div>
+        <div class="nav1"><a href="index2.html">О нас</a></div>
+        <div class="nav1"><a href="index3.html">Поддержка</a></div>
+        <div class="nav1"><a href="index4.html">Расписание</a></div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-heading">
+            Контакты
+        </div>
+        <div class="phone">
+            <img class="phone" src="../assets/images/phone (2).webp" alt="">
+            <div class="number">+7-904-063-26-07</div>
+        </div>
+        <div class="home">
+            <img class="home" src="../assets/images/home.webp" alt="">
+            <div class="adress">
+                г. Нижний Новгород,<br>
+                ул. Маркса, д. 44А</div>
+        </div>
+    </div>
+
+    <div class="social">
+        <div class="social-heading">Соцсети</div>
+        <img class="vk" src="../assets/images/vk.webp" alt="">
+        <img class="telega" src="../assets/images/telega.webp" alt="">
+        <img class="youtube" src="../assets/images/youtube.webp" alt="">
+    </div>
+</footer>
+
+</body>
+</html>
