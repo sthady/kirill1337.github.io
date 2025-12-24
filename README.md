@@ -1,1 +1,0 @@
-# sthady.github.io
